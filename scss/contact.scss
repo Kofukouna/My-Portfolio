@@ -1,0 +1,60 @@
+#contact-a {
+    text-align: center;
+
+    .container {
+        padding: 0 2rem;
+
+        .contact-form {
+            .text-field {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+    
+                textarea {
+                    grid-column: 1 / -1;
+                }
+    
+                input, textarea {
+                    padding: 0.5rem 1rem;
+                    border: 1px solid rgba($color: #333, $alpha: 0.5);
+                }
+
+                input:hover, textarea:hover {
+                    border: 1px solid rgba($color: #333, $alpha: 1);
+                }
+            }
+            
+            .button-submit {
+                width: 50%;
+                padding: 0.5rem 1rem;
+                margin-top: 1.5rem;
+                background-color: #333;
+                color: #ffff;
+                font-size: 1.1rem;
+                transition: all 300ms ease-out;
+                border: none;
+            }
+
+            .button-submit:hover {
+                cursor: pointer;
+                background-color: orange;
+                color: rgb(41, 41, 41);
+            }
+        }
+    }
+}
+
+
+// Portrait Phones
+@media (max-width: 575.98px) {
+    #contact-a {
+        padding: 2rem 0;
+        .container {
+            .contact-form {
+                .text-field {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,237 @@
+// Header
+#main-header {
+    height: auto;
+    background: url('/dist/img/showcase.jpg') no-repeat center top / cover;
+    color: #fff;
+    text-align: center;
+    border-bottom: 3px orange solid;
+    box-shadow: 0px 0px 1px 1px rgba($color: #000000, $alpha: 0.5);
+}
+
+
+// About-A
+#about-a {
+    text-align: center;
+
+    .about-a-cards {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        gap: 1.5rem;
+        margin: 1rem 0;
+        
+        .card:first-child {
+            line-height: 0;
+        }
+
+        .card:last-child {
+            background-color: #f4f4f4;
+            border-left: 3px solid orange;
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 0.9rem;
+                padding: 0.5rem 0;
+            }
+        }
+
+    
+    }
+}
+
+
+//About-B
+#about-b {
+    .container {
+        .about-b-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+
+            .card {
+                i {
+                    font-size: 3rem;
+                    margin-bottom: 1.5rem;
+                    color: orange;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                }
+
+                p {
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
+}
+
+
+// About-C
+#about-c {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+    .about-c-cards {
+        text-align: left;
+        
+        .card {
+            padding: 0.5rem 0;
+
+            h3 {
+                line-height: 1.6;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                font-weight: normal;
+            }
+            
+            div.progress {
+                height: 20px;
+                width: 100%;
+                border-radius: 5px;
+                background-color: #cccccc;
+                overflow: hidden;
+
+                div.percentages {
+                    background-color: orange;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+// About-D
+#about-d {
+    .container {
+        .about-d-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8rem;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+        }
+    }
+}
+
+
+// About-E
+#about-e {
+    text-align: center;
+
+    .container {
+        padding: 0 2rem;
+        
+        .about-e-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+
+            .card {
+                .card-content {
+                    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+                    padding: 1rem;
+                    border-radius: 5px;
+                }
+
+                .card-img {
+                    display: grid;
+                    grid-template-columns: 1fr 5fr;
+                    gap: 0.5rem;
+                    text-align: left;
+                    align-items: center;
+                    padding: 0.5rem;
+                    font-size: 0.9rem;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+// Portrait Phones
+@media (max-width: 575.98px) {
+    #about-a {
+        .about-a-cards {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 0 1rem;
+        }
+    }    
+
+    #about-b {
+        padding-top: 0;
+        .container {
+            padding: 0 1rem;
+
+            .about-b-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    #about-d {
+        padding: 2rem 0;
+        .container {
+            .about-d-cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+
+                .card {
+                    text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #about-e {
+        padding: 2rem 0;
+
+        .container {
+            .about-e-cards {
+                grid-template-columns: 1fr;
+
+                .card {
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+// Landscape Phones
+@media (min-width: 576px) and (max-width: 812.98px) {
+    #about-d {
+        .container {
+            .about-d-cards {
+                gap: 1rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #about-e {
+        padding: 0;
+    }
+
+}
